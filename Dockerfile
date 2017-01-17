@@ -2,7 +2,8 @@ FROM jenkins
 MAINTAINER Oliver Schwab
 
 # install plugins
-RUN /usr/local/bin/install-plugins.sh git gradle deploy workflow-aggregator checkstyle email-ext dashboard-view build-environment all-changes envinject docker-workflow
+COPY plugins.txt /usr/share/jenkins/plugins.txt
+RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 
 # skip setup wizard
 ENV JAVA_OPTS "-Djenkins.install.runSetupWizard=false"
