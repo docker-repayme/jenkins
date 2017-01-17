@@ -1,0 +1,11 @@
+git
+gradle
+deploy
+workflow-aggregator
+checkstyle
+email-ext
+dashboard-view
+build-environment
+all-changes
+envinject
+docker-workflow
