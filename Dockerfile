@@ -3,6 +3,7 @@ MAINTAINER Oliver Schwab
 
 # install plugins
 RUN /usr/local/bin/install-plugins.sh git
+RUN /usr/local/bin/install-plugins.sh github
 RUN /usr/local/bin/install-plugins.sh gradle
 RUN /usr/local/bin/install-plugins.sh workflow-aggregator
 RUN /usr/local/bin/install-plugins.sh email-ext
