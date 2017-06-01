@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkinsci/jenkins
 MAINTAINER Oliver Schwab
 
 # install plugins
